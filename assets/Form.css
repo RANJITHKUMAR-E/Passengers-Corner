@@ -12,10 +12,26 @@ body {
     width: 100%;
     overflow-x: hidden;
     background-color: #48DBFB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bg_image{
+    width: 50%;
+    height: auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.bg_image img{
+    border: #16336d;
+    border-radius: 20px;
 }
 
 .contact-form {
-    width: 60%;
+    width: 50%;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -24,6 +40,7 @@ body {
     font-weight: 500;
     overflow: hidden;
     position: relative;
+    padding: 50px;
 }
 
 .section-head{
@@ -47,6 +64,7 @@ body {
     width: 80%;
     display: flex;
     bottom: 0px;
+
     border: 1px solid rgb(207, 207, 207);
     border-radius: 5px;
     align-items: center;
@@ -194,5 +212,8 @@ body {
 @media screen and (max-width: 980px) {
     .contact-form{
         width: 100%;
+    }
+    .bg_image{
+        display: none;
     }
 }
